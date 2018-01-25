@@ -15,4 +15,4 @@ storiesOf('Button', module)
 
 storiesOf('Spinner', module)
   .add('default', () => <Spinner background="blue" />)
-  .add('yellow', () => <Spinner background="yellow" />)
+  .add('green', () => <Spinner background="green" />)
