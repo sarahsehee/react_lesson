@@ -1,12 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 
+
+
 const Hwbutton = styled.button`
 margin-right: 8px;
 margin-bottom: 12px;
-color: #fff;
-background-color: #1890ff;
-border-color: #1890ff;
+color: #1890ff;
 line-height: 1.5;
 display: inline-block;
 font-weight:400;
@@ -17,12 +17,13 @@ font-size: 14px;
 border-radius: 4px;
 height: 32px;
 `
-const Button = ()=> {
+
+
+const Button = (props) => {
     return (
-        <Hwbutton>
-            Primary Button
-        </Hwbutton>
+        <Hwbutton type={props.type}/>
     )
 }
+
 
 export default Button

@@ -1,13 +1,10 @@
 import React from 'react';
 
 import { storiesOf } from '@storybook/react';
-import { action } from '@storybook/addon-actions';
-import { linkTo } from '@storybook/addon-links';
-
 import Spinner from '../components/Spinner'
 import Button from '../components/Button'
-
-storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
+import Switch from '../components/Switch'
+import Checkbox from '../components/Checkbox'
 
 /* 버튼 지움
 storiesOf('Button', module)
@@ -19,5 +16,13 @@ storiesOf('Spinner', module)
   .add('default', () => <Spinner background="blue" />)
   .add('green', () => <Spinner background="green" />)
 
+
 storiesOf('Button', module)
-  .add('default', () => <Button /> )
+  .add('primary', () => <Button type="primary"> Default Button </Button>)
+  .add('danger', () => <Button type="danger"> Default Button </Button>)
+
+storiesOf('Switch', module)
+  .add('default', () => <Switch></Switch>)
+
+storiesOf('Checkbox', module)
+  .add('dafault', () => <Checkbox></Checkbox>)

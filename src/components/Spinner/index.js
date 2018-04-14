@@ -25,7 +25,7 @@ const Dot = styled.div`
 width: 60%;
 height: 60%;
 display: inline-block;
-position: absolute;
+position: absol sdute;
 top: 0;
 background-color: ${(props) => props.background};
 border-radius: 100%;
