@@ -18,8 +18,8 @@ storiesOf('Spinner', module)
 
 
 storiesOf('Button', module)
-  .add('primary', () => <Button type="primary"> Default Button </Button>)
-  .add('danger', () => <Button type="danger"> Default Button </Button>)
+  .add('primary', () => <Button type="primary">Button</Button>)
+  .add('danger', () => <Button type="danger">Button</Button>)
 
 storiesOf('Switch', module)
   .add('default', () => <Switch></Switch>)
