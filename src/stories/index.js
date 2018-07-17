@@ -1,10 +1,11 @@
 import React from 'react';
-
 import { storiesOf } from '@storybook/react';
 import Spinner from '../components/Spinner'
 import Button from '../components/Button'
 import Switch from '../components/Switch'
 import Checkbox from '../components/Checkbox'
+import Counter from '../components/Counter'
+import RadioButton from '../components/RadioButton';
 
 /* 버튼 지움
 storiesOf('Button', module)
@@ -26,3 +27,9 @@ storiesOf('Switch', module)
 
 storiesOf('Checkbox', module)
   .add('dafault', () => <Checkbox></Checkbox>)
+
+storiesOf('Counter',module)
+  .add('default', () => <Counter defaultValue={15}></Counter>)
+
+storiesOf('RadioButton',module)
+  .add('default', () => <RadioButton></RadioButton>)
