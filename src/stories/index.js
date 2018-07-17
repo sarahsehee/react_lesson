@@ -6,6 +6,7 @@ import Switch from '../components/Switch'
 import Checkbox from '../components/Checkbox'
 import Counter from '../components/Counter'
 import RadioButton from '../components/RadioButton';
+import BucketList from '../components/List';
 
 /* 버튼 지움
 storiesOf('Button', module)
@@ -33,3 +34,7 @@ storiesOf('Counter',module)
 
 storiesOf('RadioButton',module)
   .add('default', () => <RadioButton></RadioButton>)
+
+
+storiesOf('BucketList',module)
+  .add('default', () => <BucketList>sfsf</BucketList>)
