@@ -37,4 +37,4 @@ storiesOf('RadioButton',module)
 
 
 storiesOf('BucketList',module)
-  .add('default', () => <BucketList>sfsf</BucketList>)
+  .add('default', () => <BucketList list={["sarah","lim"]}></BucketList>)

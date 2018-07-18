@@ -5,19 +5,18 @@ const List = styled.li`
     font-weight: 600;
     font-family: sans-serif;
     margin: 1rem 0;
-    color: ${(props)=>props.clicked ? "lime" : "black" };
 `
-const numbers = [1, 2, 3, 4, 5];
-
-const ArrayItem = numbers.map((item) => 
-    <List>{item}</List>);
 
 class BucketList extends React.Component {
     render(){
-        return <ul> 
-            {ArrayItem}
+        const ArrayA = this.props.list;
+        const ArrayItem = ArrayA.map((number) =>
+        <List>{number}</List>
+      );
+    return <ul>
+        {ArrayItem}
         </ul>
     }
 }
 
-export default BucketList
+export default BucketList;
